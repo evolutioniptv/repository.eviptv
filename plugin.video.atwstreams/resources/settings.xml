@@ -1,0 +1,7 @@
+<settings>
+<category label="General">
+     <setting id="Username" type="text" label="Username" default=""/>
+     <setting id="Password" type="text" option="hidden" label="Password" default=""/>
+     <setting id="PVRUpdater" type="bool" label="Update PVR on Startup" default="false"/>
+</category>
+</settings>
