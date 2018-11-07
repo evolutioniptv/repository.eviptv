@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.eviptv" version="1.2" name="Evolution IPTV" provider-name="Evolution IPTV">
+<addon id="plugin.video.eviptv" version="1.3" name="Evolution IPTV" provider-name="Evolution IPTV">
 	<requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
