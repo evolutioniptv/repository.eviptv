@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="repository.eviptv" name="Evolution IPTV" version="1.0" provider-name="Evolution IPTV">
+	<extension point="xbmc.addon.repository" name="Evolution IPTV">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/evolutioniptv/repository.eviptv/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/evolutioniptv/repository.eviptv/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/evolutioniptv/repository.eviptv/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Evolution IPTV</summary>
+		<description lang="en">Evolution IPTV</description>
+		<genre></genre>
+	</extension>
+</addon>
+</addons>
