@@ -30,7 +30,7 @@
     <setting id="CustomAddon9.image" value="special://home/addons/plugin.video.V-Streams/icon.png" />
     <setting id="CustomAddon9.label" value="Fab Hosting" />
     <setting id="addon.match" value="1" />
-    <setting id="addons.ini.file" value="special://userdata/addon_data/script.ivueguide/resources/ini/plugin.video.darkmedia/plugin.video.darkmedia.ini" />
+    <setting id="addons.ini.file" value="special://userdata/addon_data/script.ivueguide/resources/ini/plugin.video.V-Streams/plugin.video.V-Streams.ini" />
     <setting id="addons.ini.type" value="1" />
     <setting id="alternative.playback" value="false" />
     <setting id="autostart" value="false" />

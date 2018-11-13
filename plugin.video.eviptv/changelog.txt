@@ -1,1 +1,2 @@
-v1.0 Addon Launched 
+1.0.0
+- Initial Release

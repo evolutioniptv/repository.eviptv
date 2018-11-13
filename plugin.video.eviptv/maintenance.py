@@ -6,7 +6,7 @@ import glob
 import common as Common
 import os
 
-AddonTitle="[COLOR ghostwhite]Evolution IPTV Wizard[/COLOR]"
+AddonTitle="[COLOR ghostwhite]Evolution IPTV[/COLOR]"
 thumbnailPath = xbmc.translatePath('special://userdata/Thumbnails');
 cachePath = os.path.join(xbmc.translatePath('special://home'), 'cache')
 tempPath = xbmc.translatePath('special://temp')

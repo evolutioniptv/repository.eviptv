@@ -24,11 +24,11 @@ HOME         =  xbmc.translatePath('special://home/')
 Username=plugintools.get_setting("Username")
 Password=plugintools.get_setting("Password")
 PVRon = plugintools.get_setting("PVRUpdater")
-lehekylg= base64.b64decode("aHR0cDovL3dhdGNoLmdvdGRhcmsuY29t")
-# pordinumber=base64.b64decode("Njk2OQ==")
+lehekylg= base64.b64decode("d2F0Y2guZXZvbHV0aW9uaXB0di5uaW5qYQ==")
+pordinumber=base64.b64decode("ODA4MA==")
 BASEURL = base64.b64decode("bmFkYQ==")
 AddonRes = xbmc.translatePath(os.path.join('special://home','addons',AddonID,'resources'))
-loginurl   = base64.b64decode("JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD10cw==")%(lehekylg,Username,Password)
+loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD10cw==")%(lehekylg,pordinumber,Username,Password)
 
 try:
     from sqlite3 import dbapi2 as database
@@ -413,7 +413,7 @@ def PVRbeta():
 	jsonSetPVR = '{"jsonrpc":"2.0", "method":"Settings.SetSettingValue", "params":{"setting":"pvrmanager.enabled", "value":true},"id":1}'
 	IPTVon 	   = '{"jsonrpc":"2.0","method":"Addons.SetAddonEnabled","params":{"addonid":"pvr.iptvsimple","enabled":true},"id":1}'
 	nulldemo   = '{"jsonrpc":"2.0","method":"Addons.SetAddonEnabled","params":{"addonid":"pvr.demo","enabled":false},"id":1}'
-	EPGurl   = base64.b64decode("JXM6JXMveG1sdHYucGhwP3VzZXJuYW1lPSVzJnBhc3N3b3JkPSVz")%(lehekylg,Username,Password)
+	EPGurl   = base64.b64decode("YmVuenR2LmRkbnMubmV0L3htbHR2LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcw==")%(lehekylg,pordinumber,Username,Password)
 	
 	xbmc.executeJSONRPC(nullLiveTV)
 	xbmc.executeJSONRPC(nulldemo)
@@ -422,14 +422,14 @@ def PVRbeta():
 	if not os.path.exists(PVRSimple):
 		os.makedirs(PVRSimple)
 	shutil.copyfile(AddonRes+'/PVRset.xml', PVRSimple+'settings.xml')
-	BetaPVR = PVRSimple+'eviptv.m3u8'
+	BetaPVR = PVRSimple+'VStreams.m3u8'
 	time.sleep(1)
 
 	f = open(BetaPVR, 'a')
 	f.write('#EXTM3U\n')
 
 	xbmc.executebuiltin("ActivateWindow(busydialog)")
-	UserList = base64.b64decode("JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD10cw==")%(lehekylg,Username,Password)
+	UserList = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD10cw==")%(lehekylg,pordinumber,Username,Password)
 	link = open_url(UserList).replace('\r','').replace(',',' Channel="').replace('\nhttp','", Link=http')
 	match = re.compile('#EXTINF:-1 tvg-id="(.+?)" tvg-name="(.+?)" tvg-logo="(.+?)" group-title="(.+?)" Channel="(.+?)", Link=(.+?).ts').findall(link)
 	for EPGid, ChannelName, ChanLogo, GroupTitle, StreamTitle, StreamLink in match:
@@ -486,7 +486,7 @@ def correctPVR():
 	jsonSetPVR = '{"jsonrpc":"2.0", "method":"Settings.SetSettingValue", "params":{"setting":"pvrmanager.enabled", "value":true},"id":1}'
 	IPTVon 	   = '{"jsonrpc":"2.0","method":"Addons.SetAddonEnabled","params":{"addonid":"pvr.iptvsimple","enabled":true},"id":1}'
 	nulldemo   = '{"jsonrpc":"2.0","method":"Addons.SetAddonEnabled","params":{"addonid":"pvr.demo","enabled":false},"id":1}'
-	EPGurl   = base64.b64decode("JXM6JXMveG1sdHYucGhwP3VzZXJuYW1lPSVzJnBhc3N3b3JkPSVz")%(lehekylg,Username,Password)
+	EPGurl   = base64.b64decode("YmVuenR2LmRkbnMubmV0L3htbHR2LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcw==")%(lehekylg,pordinumber,Username,Password)
 
 	xbmc.executeJSONRPC(nullPVR)
 	xbmc.executeJSONRPC(nullLiveTV)

@@ -26,7 +26,7 @@ except ImportError:
         ET = None
         if 73 - 73: II111iiii
         if 22 - 22: I1IiiI * Oo0Ooo / OoO0O00.OoOoOO00.o0oOOo0O0Ooo / I1ii11iIi11i
-I1IiI = 'plugin.video.darkmedia' ###################
+I1IiI = 'plugin.video.eviptv' ###################
 o0OOO = xbmcaddon.Addon(I1IiI)
 iIiiiI = o0OOO.getAddonInfo('id')
 Iii1ii1II11i = o0OOO.getAddonInfo('name')
