@@ -30,7 +30,7 @@ HOME =  xbmc.translatePath('special://home/')
 GuideLoc = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.eviptv', 'g')) 
 Guide = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.eviptv', 'guide.xml')) 
 lehekylg= base64.b64decode("d2F0Y2guZXZvbHV0aW9uaXB0di5uaW5qYQ==") 
-pordinumber=base64.b64decode("ODA4MA==")
+pordinumber=base64.b64decode("ODA=")
 message = "VU5BVVRIT1JJWkVEIEVESVQgT0YgQURET04h"
 kasutajanimi=plugintools.get_setting("Username")
 salasona=plugintools.get_setting("Password")
