@@ -6,17 +6,17 @@ import glob
 import common as Common
 import os
 
-AddonTitle="[COLOR ghostwhite]Evolution IPTV[/COLOR]"
+AddonTitle="[COLOR ghostwhite]Players Tools[/COLOR]"
 thumbnailPath = xbmc.translatePath('special://userdata/Thumbnails');
 cachePath = os.path.join(xbmc.translatePath('special://home'), 'cache')
 tempPath = xbmc.translatePath('special://temp')
-addonPath = os.path.join(os.path.join(xbmc.translatePath('special://home'), 'addons'),'plugin.video.eviptv')
-ICON = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.eviptv', 'icon.png'))
+addonPath = os.path.join(os.path.join(xbmc.translatePath('special://home'), 'addons'),'plugin.video.playklub')
+ICON = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.playklub', 'icon.png'))
 mediaPath = os.path.join(addonPath, 'resources/art')
 databasePath = xbmc.translatePath('special://userdata/Database')
 USERDATA = xbmc.translatePath('special://userdata/')
 AddonData = xbmc.translatePath('special://userdata/addon_data')
-MaintTitle="[COLOR white]Evolution IPTV Maintenance[/COLOR]"
+MaintTitle="[COLOR white]Fab Maintenance[/COLOR]"
 dp = xbmcgui.DialogProgress()
 Windows = xbmc.translatePath('special://home')
 WindowsCache = xbmc.translatePath('special://home')
@@ -39,6 +39,13 @@ class cacheEntry:
     def __init__(self, namei, pathi):
         self.name = namei
         self.path = pathi	
+
+def CheckUpdates():
+	xbmc.executebuiltin("ActivateWindow(busydialog)")
+	xbmc.executebuiltin('UpdateAddonRepos()')
+	xbmc.executebuiltin('UpdateLocalAddons()')
+	xbmc.executebuiltin("Dialog.Close(busydialog)")
+	xbmc.executebuiltin('Notification(Ckecking...,[COLOR white]Checking for updates...[/COLOR],3000,special://home/addons/plugin.video.playklub/icon.png)')
 
 def clearCache():
     
@@ -146,7 +153,7 @@ def clearCache():
                 
     xbmc.executebuiltin("Container.Refresh")
     dialog = xbmcgui.Dialog()
-    xbmc.executebuiltin('Notification(Clean,[COLOR white]Cache cleaned[/COLOR],2000,special://home/addons/plugin.video.eviptv/icon.png)')
+    xbmc.executebuiltin('Notification(Clean,[COLOR white]Cache cleaned[/COLOR],2000,special://home/addons/plugin.video.playklub/icon.png)')
     
 def deleteThumbnails():
     
@@ -171,7 +178,7 @@ def deleteThumbnails():
     except OSError:
         pass
 	xbmc.executebuiltin("Container.Refresh")
-	xbmc.executebuiltin('Notification(Clean,[COLOR white]Thumbnails cleaned[/COLOR],2000,special://home/addons/plugin.video.eviptv/icon.png)')
+	xbmc.executebuiltin('Notification(Clean,[COLOR white]Thumbnails cleaned[/COLOR],2000,special://home/addons/plugin.video.playklub/icon.png)')
 
 #######################################################################
 #						Delete Packages
@@ -194,10 +201,10 @@ def purgePackages():
                 for d in dirs:
                     shutil.rmtree(os.path.join(root, d))
                 dialog = xbmcgui.Dialog()
-                xbmc.executebuiltin('Notification(Purged,[COLOR white]All packages purged[/COLOR],2000,special://home/addons/plugin.video.eviptv/icon.png)')
+                xbmc.executebuiltin('Notification(Purged,[COLOR white]All packages purged[/COLOR],2000,special://home/addons/plugin.video.playklub/icon.png)')
             else:
                 dialog = xbmcgui.Dialog()
-                xbmc.executebuiltin('Notification(Not Required,[COLOR white]No Packages to Purge[/COLOR],2000,special://home/addons/plugin.video.eviptv/icon.png)')
+                xbmc.executebuiltin('Notification(Not Required,[COLOR white]No Packages to Purge[/COLOR],2000,special://home/addons/plugin.video.playklub/icon.png)')
 	xbmc.executebuiltin("Container.Refresh")
 
 #######################################################################
@@ -490,5 +497,5 @@ def autocleannow():
                 for d in dirs:
                     shutil.rmtree(os.path.join(root, d))
 
-    xbmc.executebuiltin('Notification(Clean,[COLOR white]All temporary data has been cleaned[/COLOR],2000,special://home/addons/plugin.video.eviptv/icon.png)')
+    xbmc.executebuiltin('Notification(Clean,[COLOR white]All temporary data has been cleaned[/COLOR],2000,special://home/addons/plugin.video.playklub/icon.png)')
     xbmc.executebuiltin("Container.Refresh")
