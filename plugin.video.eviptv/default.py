@@ -9,7 +9,6 @@ import string
 reload(sys)
 dialog       =  xbmcgui.Dialog()
 sys.setdefaultencoding('utf8')
-SKIN_VIEW_FOR_MOVIES="515"
 addonDir = plugintools.get_runtime_path()
 global kontroll
 global EPGColour
