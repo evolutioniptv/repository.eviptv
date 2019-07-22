@@ -26,7 +26,7 @@ except ImportError:
         ET = None
         if 73 - 73: II111iiii
         if 22 - 22: I1IiiI * Oo0Ooo / OoO0O00.OoOoOO00.o0oOOo0O0Ooo / I1ii11iIi11i
-I1IiI = 'plugin.video.playklub' ###################
+I1IiI = 'plugin.video.eviptv' ###################
 o0OOO = xbmcaddon.Addon(I1IiI)
 iIiiiI = o0OOO.getAddonInfo('id')
 Iii1ii1II11i = o0OOO.getAddonInfo('name')
@@ -2762,7 +2762,7 @@ class oO0ooOO(xbmcgui.WindowXMLDialog):
 if __name__ == '__main__':
     if 27 - 27: II1Ii1iI1i - O0 % i111I * o0ooo.I11iii11IIi % iIii1I11I1II1
     if 37 - 37: OoooooooOO + O0 - i1IIi % OOO0O
-    oO0o00ooO = oO0ooOO("main.xml", o0OOO.getAddonInfo('path'), "Speed")
+    oO0o00ooO = oO0ooOO("main.xml", o0OOO.getAddonInfo('path'), "Default")
     if 24 - 24: OoOoOO00
     del oO0o00ooO
 # dd678faae9ac167bc83abf78e5cb2f3f0688d3a3

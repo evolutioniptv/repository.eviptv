@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.eviptv" version="5.0" name="Evolution IPTV" provider-name="Team Evolution">
-    <requires>
+<addon id="plugin.video.eviptv" version="5.1" name="Evolution IPTV" provider-name="Evolution IPTV">
+	<requires>
         <import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.addon.common" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -12,8 +11,8 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Evolution IPTV</summary>
-        <description>Evolution IPTV</description>
-        <disclaimer></disclaimer>
+        <description>Ground Breaking IPTV</description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
         <language>en</language>
         <platform>all</platform>
     </extension>
