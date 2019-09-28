@@ -3,7 +3,7 @@ AddonID = 'plugin.video.eviptv'
 Username = plugintools.get_setting("Username")
 Password = plugintools.get_setting("Password")
 PVRon = plugintools.get_setting("PVRUpdater")
-lehekylg = base64.b64decode("ZXZvbHV0aW9uaXB0di5uaW5qYQ==")
+lehekylg = base64.b64decode("aHR0cDovL2V2b2x1dGlvbmlwdHYubmluamE=")
 pordinumber = base64.b64decode("ODg4OA==")
 EPGurl = base64.b64decode("JXM6JXMveG1sdHYucGhwP3VzZXJuYW1lPSVzJnBhc3N3b3JkPSVz")%(lehekylg,pordinumber,Username,Password)
 NewPVR = xbmc.translatePath('special://home/userdata/addon_data/pvr.iptvsimple/VStreams.m3u8')
