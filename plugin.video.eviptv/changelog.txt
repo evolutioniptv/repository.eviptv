@@ -1,2 +1,2 @@
-1.0.0
-- Initial Release
+7.0
+- Updated URLs
