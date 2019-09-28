@@ -39,7 +39,7 @@ dialog        = xbmcgui.Dialog();dp = xbmcgui.DialogProgress()
 Addon         = 'plugin.video.eviptv' 
 inipath       = xbmc.translatePath(os.path.join(basePath, 'resources', 'ini', Addon))
 m3upath       = xbmc.translatePath(os.path.join(basePath, 'resources', 'm3u', Addon))
-addre_ss      = base64.b64decode('aHR0cDovL21lb3d5YXBtZW93LmNvbQ==')
+addre_ss      = base64.b64decode('aHR0cDovL2V2b2x1dGlvbmlwdHYubmluamE=')
 po_rt         = base64.b64decode('ODA4MA==')
 
 if not os.path.exists(basePath):
