@@ -27,8 +27,8 @@ ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'ico
 FANART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'fanart.jpg')) 
 APKS = base64.b64decode("aHR0cDovL2ZhYmlwdHYuY29tL2Fwa3MvbmV3YXBrcy50eHQ=")
 HOME =  xbmc.translatePath('special://home/')
-lehekylg= base64.b64decode("aHR0cDovL3dhdGNoLmV2b2x1dGlvbmlwdHYubmluamE=")
-pordinumber="80"
+lehekylg= base64.b64decode("ZXZvbHV0aW9uaXB0di5uaW5qYQ==")
+pordinumber="8888"
 message = "VU5BVVRIT1JJWkVEIEVESVQgT0YgQURET04h"
 kasutajanimi=plugintools.get_setting("Username")
 salasona=plugintools.get_setting("Password")
