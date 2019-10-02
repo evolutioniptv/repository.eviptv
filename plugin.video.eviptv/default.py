@@ -28,7 +28,7 @@ FANART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'f
 APKS = base64.b64decode("aHR0cDovL2ZhYmlwdHYuY29tL2Fwa3MvbmV3YXBrcy50eHQ=")
 HOME =  xbmc.translatePath('special://home/')
 lehekylg= base64.b64decode("aHR0cDovL2V2b2x1dGlvbmlwdHYubmluamE=")
-pordinumber="8888"
+pordinumber="ODg4OA=="
 message = "VU5BVVRIT1JJWkVEIEVESVQgT0YgQURET04h"
 kasutajanimi=plugintools.get_setting("Username")
 salasona=plugintools.get_setting("Password")
