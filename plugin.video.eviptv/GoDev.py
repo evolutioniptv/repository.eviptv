@@ -26,7 +26,7 @@ Username=plugintools.get_setting("Username")
 Password=plugintools.get_setting("Password")
 PVRon = plugintools.get_setting("PVRUpdater")
 lehekylg= base64.b64decode("aHR0cDovL3dhdGNoLmV2b2x1dGlvbmlwdHYubmluamE=") #####
-pordinumber="80"
+pordinumber="ODg4OA=="
 BASEURL = base64.b64decode("bmFkYQ==")
 AddonRes = xbmc.translatePath(os.path.join('special://home','addons',AddonID,'resources'))
 loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tM3U4")%(lehekylg,pordinumber,Username,Password)
